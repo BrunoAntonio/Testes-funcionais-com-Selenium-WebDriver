@@ -1,0 +1,15 @@
+package tests;
+
+import org.junit.Test;
+
+import core.BaseTest;
+import pages.MenuPAge;
+
+public class ContaTest extends BaseTest {
+	
+	MenuPage
+	
+	@Test
+	public void 
+
+}

@@ -1,0 +1,28 @@
+package core;
+
+public class Propriedades {
+	
+	public static boolean FECHAR_BROWSER = true;
+	
+	public static Browsers BROWSER = Browsers.FIREFOX;
+	
+	public static tipoExecucao TIPO_EXECUCAO = tipoExecucao.GRID;
+	
+	public enum Browsers {
+		CHROME,
+		FIREFOX
+	}
+	
+	//no directorio do selenium grid
+	//java -jar selenium-server-standalone-3.4.0.jar -role hub -> hub do selenium grid
+	//java -jar selenium-server-standalone-3.4.0.jar -role node ->ligar o grid a uma maquina
+	//java -jar selenium-server-standalone-3.4.0.jar -role node -port 5556 ->ligar o grid a uma segunda maquina
+	//no directorio do projecto
+	//mvn test
+	
+	public enum tipoExecucao{
+		LOCAL,
+		GRID
+	}
+
+}

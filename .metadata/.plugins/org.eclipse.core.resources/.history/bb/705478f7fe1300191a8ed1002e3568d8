@@ -1,0 +1,16 @@
+package tests;
+
+import org.junit.Test;
+
+import pages.MenuPage;
+
+public class MovimentacaoTest {
+
+	private MenuPage menuPage = new MenuPage();
+	
+	
+	@Test
+	public void testInserirMovimentacao() {
+		menuPage.acessarTelaInserirm
+	}
+}

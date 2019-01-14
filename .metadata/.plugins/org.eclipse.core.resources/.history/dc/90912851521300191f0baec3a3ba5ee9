@@ -1,0 +1,18 @@
+package tests;
+
+import org.junit.Test;
+
+import core.BaseTest;
+import pages.MenuPAge;
+import pages.MenuPage;
+
+public class ContaTest extends BaseTest {
+	
+	MenuPage menuPage = new MenuPage();
+	
+	@Test
+	public void testInserirConta() {
+		
+	}
+
+}

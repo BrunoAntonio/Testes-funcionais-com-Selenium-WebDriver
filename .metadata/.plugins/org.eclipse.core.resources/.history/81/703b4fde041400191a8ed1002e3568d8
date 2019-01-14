@@ -1,0 +1,19 @@
+package tests;
+
+import org.junit.Test;
+
+import core.BaseTest;
+import pages.MenuPage;
+import pages.MovimentacaoPage;
+
+public class MovimentacaoTest extends BaseTest {
+
+	private MenuPage menuPage = new MenuPage();
+	private MovimentacaoPage movPage = new MovimentacaoPage();
+	
+	
+	@Test
+	public void testInserirMovimentacao() {
+		menuPage.acessarTelaInserirMovimentacao();
+	}
+}

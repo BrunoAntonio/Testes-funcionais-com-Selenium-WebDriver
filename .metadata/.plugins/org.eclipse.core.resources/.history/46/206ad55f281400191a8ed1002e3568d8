@@ -1,0 +1,16 @@
+package tests;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+import core.BaseTest;
+
+
+public class SaldoTest extends BaseTest {
+	
+	@Test
+	public void testSaldoConta() {
+		Assert.assertEquals("123.00", actual);
+	}
+
+}

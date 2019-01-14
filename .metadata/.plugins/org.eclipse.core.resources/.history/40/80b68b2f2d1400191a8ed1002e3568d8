@@ -1,0 +1,19 @@
+package tests;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+import core.BaseTest;
+import pages.HomePage;
+
+
+public class SaldoTest extends BaseTest {
+	
+	HomePage page = new HomePage();
+	
+	@Test
+	public void testSaldoConta() {
+		Assert.assertEquals("1000.00", page.obterSaldoConta("Conta do Teste alterada"));
+	}
+
+}

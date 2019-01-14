@@ -1,0 +1,16 @@
+package core;
+
+public class Propriedades {
+	
+	public static boolean FECHAR_BROWSER = false;
+	
+	public static Browsers browser = Browsers.CHROME;
+	
+	public static String NOME_CONTA_ALTERADA = "Conta Alterada" + System.nanoTime(); //mudar o nome da conta alterada para nao a ter de apagar no fim da suite 
+	
+	public enum Browsers {
+		CHROME,
+		FIREFOX
+	}
+
+}

@@ -1,0 +1,7 @@
+package core;
+
+public class Propriedades {
+	
+	// não deve ser utilizado apesar de poupar tempo de teste, cada teste deve ter o seu browser
+	public static boolean FECHAR_BROWSER=false;
+}

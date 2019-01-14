@@ -1,0 +1,48 @@
+package sincronismo;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import organizacaoCodigo.DSL;
+
+public class TesteAjax {
+
+	private WebDriver driver;
+	private DSL dsl;
+	
+	@Before 
+	public void inicializa() {
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\Bruno\\Desktop\\Java\\Eclipse-Workspace\\chromedriver\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("https://www.primefaces.org/showcase/ui/ajax/basic.xhtml");
+		dsl = new DSL (driver);
+	}
+	
+	@After	
+	public void finaliza() {
+		driver.quit();
+	}
+	
+	@Test
+	public void testeAjax() {
+		dsl.escrever("j_idt691:name","Teste" );
+		dsl.clicarBotao("j_idt691:j_idt694");
+		
+		WebDriverWait wait = new WebDriverWait(driver, 30); 
+		wait.until(ExpectedConditions.textToBe(By.id("j_idt691:display"),"Teste"));
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("j_idt691:display"));
+		assertEquals("Teste", dsl.obterTexto("j_idt691:display"));
+	}
+	
+	
+	
+	
+}

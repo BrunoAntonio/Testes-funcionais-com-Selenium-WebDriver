@@ -1,0 +1,14 @@
+package utils;
+
+import java.util.Date;
+
+public class DataUtils {
+
+	public Date obterDataComDiferencaDias(int dias) {
+		
+	}
+	
+	public String obterDataFormatada(Date data) {
+		
+	}
+}

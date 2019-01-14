@@ -1,0 +1,21 @@
+package suites;
+
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+import org.junit.runners.Suite.SuiteClasses;
+
+import test.Cadastro;
+import test.CampoTreino;
+import test.RegrasCadastro;
+
+
+
+@RunWith(Suite.class)
+@SuiteClasses({
+	Cadastro.class,
+	RegrasCadastro.class,
+	
+})
+public class SuiteTeste {
+
+}
